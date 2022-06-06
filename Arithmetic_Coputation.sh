@@ -10,6 +10,9 @@ c=$((RANDOM%90+10));
 
 echo $a $b $c;
 
-Expr[0]=$(($a*$b+$c));
+#Expr[0]=$(($a+$b+$c));
+#Expr[1]=$(($a+$b*$c));
+#Expr[2]=$(($a*$b+$c));
+Expr[3]=$(($c+$a/$b));
 
 echo ${Expr[@]};
