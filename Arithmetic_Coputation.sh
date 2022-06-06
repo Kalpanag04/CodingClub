@@ -13,6 +13,7 @@ echo $a $b $c;
 #Expr[0]=$(($a+$b+$c));
 #Expr[1]=$(($a+$b*$c));
 #Expr[2]=$(($a*$b+$c));
-Expr[3]=$(($c+$a/$b));
+#Expr[3]=$(($c+$a/$b));
+Expr[4]=$(($a%$b+$c));
 
 echo ${Expr[@]};
