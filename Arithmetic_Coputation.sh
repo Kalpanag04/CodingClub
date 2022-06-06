@@ -1,10 +1,15 @@
 echo "Welcome to Arithmetion computation and Sorting.";
 
-read -p "Enter value of a: " a;
-read -p "Enter value of b: " b;
-read -p "Enter value of c: " c;
+#read -p "Enter value of a: " a;
+#read -p "Enter value of b: " b;
+#read -p "Enter value of c: " c;
 
+a=$((RANDOM%90+10));
+b=$((RANDOM%90+10));
+c=$((RANDOM%90+10));
 
-Expr[0]=$(($a+$b*$c));
+echo $a $b $c;
+
+Expr[0]=$(($a*$b+$c));
 
 echo ${Expr[@]};
