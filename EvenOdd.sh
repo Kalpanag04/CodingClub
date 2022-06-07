@@ -6,7 +6,7 @@ echo $num;
 
 if [ $((num%2)) -eq 0 ]
 then 
-	echo "Even";
+	echo "$num is Even Number";
 else
-	echo "Odd";
+	echo "$num is Odd Number";
 fi
